@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="bg-white text-black py-4">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4">
-        {/* Логотип и текст */}
+       
         <div className="flex items-start">
           <img src={logo} alt="KROSS STORE Logo" className="w-16 h-16 mr-4" />
           <div className="flex flex-col">
@@ -16,7 +16,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Меню */}
+       
         <nav className="flex space-x-8 items-center text-gray-600">
           <div className="flex items-center space-x-2">
             <FaShoppingCart className="text-xl" />

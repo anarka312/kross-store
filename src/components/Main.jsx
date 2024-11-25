@@ -19,26 +19,26 @@ import kross12 from './assets/cards/kross12.jpg'
 
 const ProductCard = ({ image, name, price }) => (
   <div className="relative w-52 h-64 bg-white border border-gray-300 rounded-xl p-4">
-    {/* Иконка сердца для закладок в левом верхнем углу */}
+  
     <div className="absolute top-2 left-2 text-gray-500 hover:text-gray-700">
       <img src={heart} alt="" />
     </div>
 
-    {/* Картина обуви */}
+
     <img src={image} alt={name} className="w-full h-32 object-cover rounded-xl" />
     
-    {/* Название */}
+
     <h3 className="mt-2 text-center text-sm font-normal">{name}</h3>
 
-        {/* Блок с ценой */}
+
         <div className="relative flex justify-between items-center mt-3">
-      {/* Текст "Цена" сверху над ценой */}
+
       <span className="absolute top-[-10px] left-0 text-sm text-gray-500 uppercase">Цена:</span>
       
-      {/* Цена */}
+ 
       <span className="text-lg font-bold">{price}</span>
       
-      {/* Кнопка добавления в корзину */}
+    
       <button className="rounded-full">
         <img src={plus} alt="" />
       </button>
@@ -49,7 +49,7 @@ const ProductCard = ({ image, name, price }) => (
 const MainSection = () => {
   return (
     <div className="bg-white py-8 mt-16">
-      {/* Текст "Все кроссовки" и поисковик */}
+     
       <div className="max-w-screen-xl mx-auto px-4 flex justify-between items-center mb-8">
         <h2 className="text-3xl font-bold">Все кроссовки</h2>
 
@@ -63,7 +63,7 @@ const MainSection = () => {
         </div>
       </div>
 
-      {/* Карточки товара */}
+     
       <div className="max-w-screen-xl w-full sm:w-[960px]  mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-[26px]">
     
         <ProductCard image={kross1} name="Мужские Кроссовки Nike Blazer Mid Suede" price="5 999 ₽" />
